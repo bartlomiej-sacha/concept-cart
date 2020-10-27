@@ -1,2 +1,84 @@
 .shopping-cart {
+  padding: $main-spacing;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__bar {
+    flex-basis: 100%;
+    padding: $main-spacing 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    color: gray;
+    font-family: $font-titillium;
+    font-size: 20px;
+  }
+
+  &__btn-checkout {
+    padding: $main-spacing / 2;
+    color: white;
+    background-color: $color-first;
+  }
+
+  &__content {
+    flex: 1 1 70%;
+    padding: $main-spacing;
+
+    box-shadow: 0px 3px 10px -5px #ccc;
+    display: grid;
+    grid-template-columns:
+      minmax(35%, 40%) minmax(110px, 200px) minmax(80px, 200px)
+      minmax(150px, 200px);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      '.  name price qty'
+      'products products products products'
+      'products products products products';
+
+    border: 1px solid rgba($color-gray, 0.445);
+  }
+
+  &__content--empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $base-font-size * 4;
+    color: $color-gray;
+  }
+
+  &__header-name {
+    grid-area: name;
+    padding: $main-spacing 0;
+
+    color: gray;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  &__header-price {
+    grid-area: price;
+    padding: $main-spacing 0;
+
+    color: gray;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  &__header-qty {
+    grid-area: qty;
+    padding: $main-spacing 0;
+
+    color: gray;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  &__products {
+    grid-area: products;
+  }
 }

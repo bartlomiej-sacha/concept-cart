@@ -1,2 +1,84 @@
 .cart-summary {
+  grid-area: summary;
+  flex: 0 0 25%;
+
+  margin-left: $main-spacing;
+  font-weight: bold;
+
+  &__shipping-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: $main-spacing / 2;
+    font-family: $font-titillium;
+    text-transform: uppercase;
+    background-color: #f4f4f4;
+    border: 1px solid rgba(210, 210, 221, 0.9);
+  }
+
+  &__shipping {
+    font-size: 13px;
+    font-weight: bolder;
+  }
+
+  &__money {
+    font-family: $font-roboto;
+    font-weight: bolder;
+  }
+
+  &__money--big {
+    font-size: 17px;
+  }
+
+  &__payment {
+    display: flex;
+    flex-direction: column;
+    margin-top: $small-spacing;
+    border: 1px solid rgba(210, 210, 221, 0.9);
+  }
+
+  &__details-header {
+    padding: $main-spacing / 2;
+    font-family: $font-titillium;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid rgba(210, 210, 221, 0.9);
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    padding: $small-spacing;
+    background-color: #fbfbfb;
+  }
+
+  &__subtotal-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: $main-spacing / 2;
+    border-bottom: 1px solid rgba(210, 210, 221, 0.9);
+  }
+  &__subtotal {
+    font-weight: 500;
+    color: gray;
+  }
+
+  &__grandtotal-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: $main-spacing / 2;
+  }
+
+  &__grandtotal {
+    font-weight: 500;
+    color: gray;
+  }
+
+  &__btn-checkout {
+    padding: $main-spacing / 2;
+    margin-top: $small-spacing / 2;
+    font-weight: bold;
+    color: white;
+    background-color: $color-first;
+  }
 }

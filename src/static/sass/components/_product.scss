@@ -1,2 +1,90 @@
 .product {
+  display: grid;
+  grid-template-columns:
+    minmax(35%, 40%) minmax(110px, 200px) minmax(80px, 200px)
+    minmax(150px, 200px);
+  grid-template-areas: 'product name price qty';
+  border-top: 1px solid rgba($color-gray, 0.69);
+  border-bottom: 2px solid rgba($color-gray, 0.26);
+
+  padding: $main-spacing * 2 0;
+  align-items: center;
+
+  &__column-wrapper {
+    grid-area: product;
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-delete {
+    min-width: 24px;
+    min-height: 24px;
+    margin-left: $main-spacing;
+    margin-right: $main-spacing * 2;
+
+    background-image: url('../../images/x-img.png');
+  }
+
+  &__name {
+    grid-area: name;
+    color: $color-first;
+    font-size: 14px;
+    font-weight: 300;
+    word-break: break-all;
+  }
+  &__price {
+    grid-area: price;
+    font-size: 14px;
+    color: gray;
+  }
+
+  &__quantity-wrapper {
+    grid-area: qty;
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-quantity {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-gray;
+    background-color: #f4f4f4;
+    color: gray;
+    font-weight: 600;
+  }
+
+  &__quantity-field {
+    width: 34px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: gray;
+    border-bottom: 2px solid gray;
+    border-left: 2px solid $color-first;
+    border-top: 2px solid $color-first;
+    border-right: 1px solid gray;
+  }
+
+  &__btn-quantity-edit {
+    background-image: url('../../images/edit-img.png');
+    width: 24px;
+    height: 24px;
+  }
+
+  &__bottom-wrapper {
+    padding: $main-spacing;
+    text-align: right;
+  }
+
+  &__btn-update {
+    padding: $main-spacing / 2;
+    color: white;
+    background-color: $color-first;
+    font-weight: 600;
+    border: 1px solid $color-gray;
+  }
 }

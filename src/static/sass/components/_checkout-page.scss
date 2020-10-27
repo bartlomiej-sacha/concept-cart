@@ -1,0 +1,24 @@
+.checkout {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 45%;
+  height: 25%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: $base-font-size * 3.2;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: $color-first;
+  text-align: center;
+  &__image {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &__message {
+    padding: $main-spacing;
+  }
+}

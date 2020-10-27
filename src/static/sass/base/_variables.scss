@@ -1,13 +1,15 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url('../../fonts/Roboto-Regular.ttf') format('woff2');
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
 $color-first: black;
-$color-second: #ccc;
+$color-gray: #ccc;
 
 $font-roboto: 'Roboto', sans-serif;
+$font-titillium: 'Titillium Web', sans-serif;
 $base-font-size: 16px;
-$main-spacing: 24px;
+$main-spacing: 26px;
+$small-spacing: 16px;
 
 $breakpoints: (
   xss: 0px,
